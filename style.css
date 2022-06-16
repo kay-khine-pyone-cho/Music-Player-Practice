@@ -1,0 +1,57 @@
+:root {
+  --pri-color: rgb(218, 38, 74);
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: url(./wrapper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.playlist {
+  margin-bottom: 30px;
+}
+.trackItem {
+  background-color: rgba(209, 105, 140, 0.171);
+  color: var(--pri-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.currentTime {
+  color: var(--pri-color);
+}
+#progressBar {
+  width: 400px;
+  height: 10px;
+  /* background-color: var(--pri-color); */
+  border: 1px solid rgba(155, 77, 77, 0.295);
+}
+#currentProgress {
+  width: 0px;
+  height: 100%;
+  background-color: var(--pri-color);
+  border: 0.5px solid var(--pri-color);
+}
+.controls {
+  font-size: 30px;
+  margin: 20px;
+  color: var(--pri-color);
+}
+.pause {
+  display: none;
+}
+.playtheme {
+  background-color: black;
+  color: wheat;
+}
